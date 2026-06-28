@@ -8,6 +8,9 @@ import Landing from './pages/Landing';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
+import Tasks from './pages/Tasks';
+import Calendar from './pages/Calendar';
+import Settings from './pages/Settings';
 import NotFound from './pages/NotFound';
 
 // Layouts
@@ -61,6 +64,9 @@ function App() {
           </ProtectedRoute>
         }>
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/tasks" element={<Tasks />} />
+          <Route path="/calendar" element={<Calendar />} />
+          <Route path="/settings" element={<Settings />} />
         </Route>
 
         {/* 404 Route */}
